@@ -15,6 +15,3 @@ HTML5 • CSS3 • Vanilla JavaScript
 ## Run Project
 Open **index.html** in your browser  
 (or use Live Server in VS Code)
-
-## Future Plan
-Backend, database, authentication, and payment integration.
