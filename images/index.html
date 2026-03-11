@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minora Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="images/minoralogo1.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <span>0</span>
+                </li>
+                <a href="" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <span>0</span>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <section id="hero">
+        <div>
+            <h4>Style That Defines You</h4>
+            <h2>Exclusive Offers</h2>
+            <h1>Across All Products</h1>
+            <p>Get more for less - Up to 70% OFF</p>
+            <button class="normal">Shop now</button>
+        </div>
+        <div>
+            <img src="images/HEROBANNER222.png" alt="">
+        </div>
+    </section>
+    <section id="features" class="section1-p1">
+        <div class="fe-box">
+            <img src="images/features2/freeshipping.svg" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features2/happySell.svg" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features2/onlineOrder.png" alt="">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features2/promotion.png" alt="">
+            <h6>Promotion</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features2/saveMoney.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features2/services.png" alt="">
+            <h6>F24/7 Support</h6>
+        </div>
+    </section>
+    <section id="product1" class="section1-p1">
+        <h2>Signature Collection</h2>
+        <p>Handpicked Styles That Defines Your Personality</p>
+        <div class="pro-container">
+            <div class="pro" onclick="goToProduct(1)">
+                <img src="images/products/product1.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Timeless Basic T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+            <div class="pro" onclick="goToProduct(2)">
+                <img src="images/products/product2.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Timeless Basic T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+            <div class="pro" onclick="goToProduct(3)">
+                <img src="images/products/product3.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Timeless Basic T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+            <div class="pro" onclick="goToProduct(4)">
+                <img src="images/products/product4.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Timeless Basic T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+            <div class="pro" onclick="goToProduct(5)">
+                <img src="images/products/product5.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Classic Fit Jeans</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$80</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+            <div class="pro" onclick="goToProduct(6)">
+                <img src="images/products/product6.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Classic Fit Jeans</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$80</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+            <div class="pro" onclick="goToProduct(7)">
+                <img src="images/products/product77.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Elegent Mini Skirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$85</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+            <div class="pro" onclick="goToProduct(8)">
+                <img src="images/products/product9.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Elegent Mini Skirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$85</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="banner" class="section-m1">
+        <h4>Style Fix</h4>
+        <h2>Get <span>70% OFF</span> on T-shirts and Accessories</h2>
+        <button class="normal">Explore more</button>
+    </section>
+    <section id="product1" class="section1-p1">
+        <h2>Trending Now</h2>
+        <p>Modern Looks Crafted With Comfort</p>
+        <div class="pro-container">
+            <div class="pro" onclick="goToProduct(9)">
+                <img src="images/products/moreproduct1.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Prime-Wear jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$90</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+            <div class="pro" onclick="goToProduct(10)">
+                <img src="images/products/moreProduct2.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Prime-Wear jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$90</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+            <div class="pro" onclick="goToProduct(11)">
+                <img src="images/products/moreProduct3.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Luxe Leather Jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$95</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+            <div class="pro" onclick="goToProduct(12)">
+                <img src="images/products/moreProduct4.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Luxe Leather Jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$95</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+            <div class="pro" onclick="goToProduct(13)">
+                <img src="images/products/moreProduct5.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Elegence Hood Jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$92</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+            <div class="pro" onclick="goToProduct(14)">
+                <img src="images/products/moreProduct6.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Elegence Hood Jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$92</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+            <div class="pro" onclick="goToProduct(15)">
+                <img src="images/products/moreProduct7.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Essential Wear jersey</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$85</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+            <div class="pro" onclick="goToProduct(16)">
+                <img src="images/products/moreProduct8.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Essential Wear jersey</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$85</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="sm-banner" class="section1-p1">
+        <div class="banner-box">
+            <h4>Crazy deals</h4>
+            <h2>buy 1 get 1 free</h2>
+            <span>The best classic dress is on sale at Minora</span>
+            <button class="red">Learn More</button>
+        </div>
+        <div class="banner-box banner-box2">
+            <h4>Modern Classics</h4>
+            <h2>Next In Fashion</h2>
+            <span>Discover Classic Elegence at Minora</span>
+            <button class="red">Collection</button>
+        </div>
+    </section>
+    <section id="banner3" class="section1-p1">
+        <div class="banner-box">
+            <h2>Exclusive Sale</h2>
+            <h3>Chic Winter Wear, Up to 50% OFF</h3>
+        </div>
+        <div class="banner-box banner-box2">
+            <h2>Latest Shoes</h2>
+            <h3>Walk into Fashion This Winter</h3>
+        </div>
+        <div class="banner-box banner-box3">
+            <h2>Classic T-Shirts</h2>
+            <h3>Fresh Styles, Modern Fits</h3>
+        </div>
+    </section>
+    <section id="newsletter" class="section1-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Be the first to know about new arrivals and <span>special sales</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section1-p1">
+        <div class="columns">
+            <div class="col">
+                <img src="images/minoralogo1.png" alt="" class="logo">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> 89 Sunset Blvd, Los Angeles, CA</p>
+                <p><strong>Phone:</strong> +1 212-555-7823 / +92 300 1234567</p>
+                <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="images/pay/pay1c.png" alt="">
+                    <img src="images/pay/pay2b.png" alt="">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="images/pay/pay4.png" alt="" class="">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 YourBrand. All Rights Reserved. Unauthorized use is prohibited.</p>
+        </div>
+    </footer>
+     <script>
+    function goToProduct(id) {
+        window.location.href = "sproduct.html?id=" + id;
+    }
+    </script> 
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

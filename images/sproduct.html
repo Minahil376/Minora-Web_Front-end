@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minora Web - Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="index.html"><img src="446/images/minoralogo1.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <span>0</span>
+                </li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <span>0</span>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section1-p1">
+        <div class="single-pro-image">
+            <img src="" width="100%" id="mainImg" alt="">
+            <div class="small-img-group" id="smallImgContainer">
+
+            </div>
+        </div>
+
+        <div class="single-pro-detail">
+            <h6>Home / T-Shirt</h6>
+            <h4>Men's Fashion T-Shirt</h4>
+            <h2>$78.00</h2>
+            <select>
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+            <input type="number" value="1" min="1">
+            <button class="normal">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>This classic T-shirt is crafted from 100% soft cotton...</span>
+        </div>
+    </section>
+    <section id="product1" class="section1-p1">
+        <h2>Featured Products</h2>
+        <p>Modern Looks Crafted With Comfort</p>
+        <div class="pro-container">
+             <div class="pro" onclick="goToProduct(9)">
+                <img src="images/products/moreproduct1.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Prime-Wear jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$90</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+            <div class="pro" onclick="goToProduct(10)">
+                <img src="images/products/moreProduct2.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Prime-Wear jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$90</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+            <div class="pro" onclick="goToProduct(11)">
+                <img src="images/products/moreProduct3.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Luxe Leather Jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$95</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+            <div class="pro" onclick="goToProduct(12)">
+                <img src="images/products/moreProduct4.png" alt="">
+                <div class="des">
+                    <span>adids</span>
+                    <h5>Luxe Leather Jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$95</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section1-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Be the first to know about new arrivals and <span>special sales</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+    <script>
+    function goToProduct(id) {
+        window.location.href = "sproduct.html?id=" + id;
+    }
+</script>
+    <script>
+        const products = [
+            null,
+            {
+                name: "Men's Fashion T-Shirt",
+                price: "$78",
+                category: "T-Shirt",
+                desc: "This classic T-shirt is crafted from 100% soft cotton for everyday comfort. Its breathable fabric keeps you cool, while the modern fit makes it easy to style with jeans, trousers, or jackets. Durable stitching ensures long-lasting wear, and the lightweight feel makes it perfect for all seasons. Available in multiple sizes and colors, it's designed to suit every wardrobe. A must-have essential that combines simplicity with timeless style.",
+                mainImg: "images/products/product1.png",
+                smallImgs: ["images/products/product1.png", "images/products/product2.png", "images/products/product3.png", "images/products/product4.png"]
+            },
+            {
+                name:
+                    "Men's Fashion T-Shirt",
+                price: "$78",
+                category: "T-Shirt",
+                desc: "This classic T-shirt is crafted from 100% soft cotton for everyday comfort. Its breathable fabric keeps you cool, while the modern fit makes it easy to style with jeans, trousers, or jackets. Durable stitching ensures long-lasting wear, and the lightweight feel makes it perfect for all seasons. Available in multiple sizes and colors, it's designed to suit every wardrobe. A must-have essential that combines simplicity with timeless style.",
+                mainImg: "images/products/product2.png",
+                smallImgs: ["images/products/product2.png", "images/products/product1.png", "images/products/product3.png", "images/products/product4.png"]
+            },
+            {
+                name: "Men's Fashion T-Shirt",
+                price: "$78",
+                category: "T-Shirt",
+                desc: "This classic T-shirt is crafted from 100% soft cotton for everyday comfort. Its breathable fabric keeps you cool, while the modern fit makes it easy to style with jeans, trousers, or jackets. Durable stitching ensures long-lasting wear, and the lightweight feel makes it perfect for all seasons. Available in multiple sizes and colors, it's designed to suit every wardrobe. A must-have essential that combines simplicity with timeless style.",
+                mainImg: "images/products/product3.png",
+                smallImgs: ["images/products/product3.png", "images/products/product1.png", "images/products/product2.png", "images/products/product4.png"]
+            },
+            {
+                name: "Men's Fashion T-Shirt",
+                price: "$78",
+                category: "T-Shirt",
+                desc: "This classic T-shirt is crafted from 100% soft cotton for everyday comfort. Its breathable fabric keeps you cool, while the modern fit makes it easy to style with jeans, trousers, or jackets. Durable stitching ensures long-lasting wear, and the lightweight feel makes it perfect for all seasons. Available in multiple sizes and colors, it's designed to suit every wardrobe. A must-have essential that combines simplicity with timeless style.",
+                mainImg: "images/products/product4.png",
+                smallImgs: ["images/products/product4.png", "images/products/product1.png", "images/products/product2.png", "images/products/product3.png"]
+            },
+            {
+                name: "Classic Fit Jeans",
+                price: "$80",
+                category: "Jeans",
+                desc: "These jeans are made from durable, stretch-enhanced denim that moves with you without losing shape. The fabric provides all-day comfort while maintaining a structured look. Designed with a modern straight fit, they pair easily with T-shirts, shirts, or jackets. Reinforced stitching and high-quality hardware ensure long-term wear. Available in multiple washes, they deliver a reliable balance of comfort, longevity, and everyday style.",
+                mainImg: "images/products/product5.png",
+                smallImgs: ["images/products/product5.png", "images/products/product6.png"]
+            },
+            {
+                name: "Classic Fit Jeans",
+                price: "$80",
+                category: "Jeans",
+                desc: "These jeans are made from durable, stretch-enhanced denim that moves with you without losing shape. The fabric provides all-day comfort while maintaining a structured look. Designed with a modern straight fit, they pair easily with T-shirts, shirts, or jackets. Reinforced stitching and high-quality hardware ensure long-term wear. Available in multiple washes, they deliver a reliable balance of comfort, longevity, and everyday style.",
+                mainImg: "images/products/product6.png",
+                smallImgs: ["images/products/product6.png", "images/products/product5.png"]
+            },
+            {
+                name:
+                    "Elegant Mini Skirt",
+                price: "$85",
+                category: "Skirt",
+                desc: "This mini skirt is crafted from a soft yet sturdy fabric blend that keeps its form without feeling restrictive. The smooth finish gives it a clean, polished appearance suitable for casual or dressed-up looks. A secure waistband ensures a comfortable fit, and the lightweight design makes it ideal for warm weather or layered outfits. Available in multiple colors, it offers a simple, versatile style that works with almost any top.",
+                mainImg: "images/products/product77.png",
+                smallImgs: ["images/products/product77.png", "images/products/product9.png"]
+            },
+            {
+                name: "Elegant Mini Skirt",
+                price: "$85",
+                category: "Skirt",
+                desc: "This mini skirt is crafted from a soft yet sturdy fabric blend that keeps its form without feeling restrictive. The smooth finish gives it a clean, polished appearance suitable for casual or dressed-up looks. A secure waistband ensures a comfortable fit, and the lightweight design makes it ideal for warm weather or layered outfits. Available in multiple colors, it offers a simple, versatile style that works with almost any top.",
+                mainImg: "images/products/product9.png",
+                smallImgs: ["images/products/product9.png", "images/products/product77.png"]
+            },
+            {
+                name: "Prime-Wear Jacket",
+                price: "$90",
+                category: "Jacket",
+                desc: "The Prime Wear Jacket is built from a high-performance fabric engineered for comfort and mobility. Its lightweight structure makes it suitable for year-round use, while the inner lining provides a balanced mix of warmth and breathability. Clean cuts and a streamlined silhouette give it a modern look that pairs well with jeans, joggers, or casual trousers. Durable zippers and reinforced seams add long-lasting reliability. A practical, everyday layer that doesn't compromise style.",
+                mainImg: "images/products/moreproduct1.png",
+                smallImgs: ["images/products/moreproduct1.png", "images/products/moreProduct2.png"]
+            },
+            {
+                name: "Prime-Wear Jacket",
+                price: "$90",
+                category: "Jacket",
+                desc: "The Prime Wear Jacket is built from a high-performance fabric engineered for comfort and mobility. Its lightweight structure makes it suitable for year-round use, while the inner lining provides a balanced mix of warmth and breathability. Clean cuts and a streamlined silhouette give it a modern look that pairs well with jeans, joggers, or casual trousers. Durable zippers and reinforced seams add long-lasting reliability. A practical, everyday layer that doesn't compromise style.",
+                mainImg: "images/products/moreProduct2.png",
+                smallImgs: ["images/products/moreProduct2.png", "images/products/moreproduct1.png"]
+            },
+            {
+                name: "Luxe Leather Jacket",
+                price: "$95",
+                category: "Jacket",
+                desc: "Crafted from premium-grade leather, the Luxe Leather Jacket offers a rich texture and a naturally smooth finish. The material molds subtly to your shape over time without losing strength. A fully lined interior adds comfort, while precise stitching enhances durability. Its sharp fit, structured shoulders, and timeless design make it a standout piece for day or night outfits. This jacket is built to last and adds instant sophistication to any wardrobe.",
+                mainImg: "images/products/moreProduct3.png",
+                smallImgs: ["images/products/moreProduct3.png", "images/products/moreProduct4.png"]
+            },
+            {
+                name: "Luxe Leather Jacket",
+                price: "$95",
+                category: "Jacket",
+                desc: "Crafted from premium-grade leather, the Luxe Leather Jacket offers a rich texture and a naturally smooth finish. The material molds subtly to your shape over time without losing strength. A fully lined interior adds comfort, while precise stitching enhances durability. Its sharp fit, structured shoulders, and timeless design make it a standout piece for day or night outfits. This jacket is built to last and adds instant sophistication to any wardrobe.",
+                mainImg: "images/products/moreProduct4.png",
+                smallImgs: ["images/products/moreProduct4.png", "images/products/moreProduct3.png"]
+            },
+            {
+                name: "Elegance Hood Jacket",
+                price: "$92",
+                category: "Hoodie",
+                desc: "The Elegance Hood Jacket blends comfort with a refined everyday style. Made from a soft, breathable fabric, it provides warmth without feeling heavy. The adjustable hood adds versatility, while the tailored fit creates a clean, put-together look. Practical pockets and durable construction make it suitable for regular use. It’s an ideal choice for layering, offering a polished appearance with zero fuss.",
+                mainImg: "images/products/moreProduct5.png",
+                smallImgs: ["images/products/moreProduct5.png", "images/products/moreProduct6.png"]
+            },
+            {
+                name: "Elegance Hood Jacket (Black)",
+                price: "$92",
+                category: "Hoodie",
+                desc: "The Elegance Hood Jacket blends comfort with a refined everyday style. Made from a soft, breathable fabric, it provides warmth without feeling heavy. The adjustable hood adds versatility, while the tailored fit creates a clean, put-together look. Practical pockets and durable construction make it suitable for regular use. It’s an ideal choice for layering, offering a polished appearance with zero fuss.",
+                mainImg: "images/products/moreProduct6.png",
+                smallImgs: ["images/products/moreProduct6.png", "images/products/moreProduct5.png"]
+            },
+            {
+                name: "Essential Wear Jersey",
+                price: "$85",
+                category: "Jersey",
+                desc: "This Essential Wear Jersey uses a lightweight, moisture-friendly fabric that keeps you comfortable throughout the day. Its smooth texture and relaxed fit allow easy movement, making it suitable for casual outings, workouts, or layering. The material resists fading and stretching, ensuring long-lasting wear. Simple, versatile, and reliable, it's designed to fit seamlessly into any everyday wardrobe.",
+                mainImg: "images/products/moreProduct7.png",
+                smallImgs: ["images/products/moreProduct7.png", "images/products/moreProduct8.png"]
+            },
+            {
+                name: "Essential Wear Jersey",
+                price: "$85",
+                category: "Jersey",
+                desc: "This Essential Wear Jersey uses a lightweight, moisture-friendly fabric that keeps you comfortable throughout the day. Its smooth texture and relaxed fit allow easy movement, making it suitable for casual outings, workouts, or layering. The material resists fading and stretching, ensuring long-lasting wear. Simple, versatile, and reliable, it's designed to fit seamlessly into any everyday wardrobe.",
+                mainImg: "images/products/moreProduct8.png",
+                smallImgs: ["images/products/moreProduct8.png", "images/products/moreProduct7.png"]
+            },
+        ];
+
+        const params = new URLSearchParams(window.location.search);
+        const id = parseInt(params.get('id')) || 1;
+        const product = products[id];
+
+        if (product) {
+            document.querySelector('#prodetails h6').textContent = `Home / ${product.category}`;
+            document.querySelector('#prodetails h4').textContent = product.name;
+            document.querySelector('#prodetails h2').textContent = product.price;
+            document.querySelector('#prodetails span').textContent = product.desc;
+
+            document.getElementById('mainImg').src = product.mainImg;
+
+            const container = document.getElementById('smallImgContainer');
+            container.innerHTML = ''; 
+            product.smallImgs.forEach(src => {
+                const col = document.createElement('div');
+                col.className = 'small-img-col';
+
+                const img = document.createElement('img');
+                img.src = src;
+                img.className = 'small-img';
+                img.alt = '';
+                img.style.width = '100%';
+
+                img.onclick = () => {
+                    document.getElementById('mainImg').src = src;
+                    document.querySelectorAll('.small-img').forEach(i => i.classList.remove('active'));
+                    img.classList.add('active');
+                };
+
+                col.appendChild(img);
+                container.appendChild(col);
+            });
+
+            const firstImg = container.querySelector('.small-img');
+            if (firstImg) firstImg.classList.add('active');
+
+        } else {
+            document.querySelector('#prodetails h4').textContent = "Product Not Found";
+        }
+    </script>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>
